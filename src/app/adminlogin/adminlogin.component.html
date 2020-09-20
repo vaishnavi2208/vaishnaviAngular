@@ -1,0 +1,26 @@
+<h2 class="text-center">Admin Login</h2>
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 col-md-offset-5">
+        <div class="jumbotron">
+            <form [formGroup]="form" (ngSubmit)="login()" autocomplete="off">
+                <div class="form-group">
+            <label>Admin Name</label>
+            <input type="text" placeholder="enter admin name" autofocus required maxlength="8" [(ngModel)]="admin"/>
+                </div>
+        <div class="form-group">
+            <label>Admin password</label>
+            <input type="number" placeholder="enter your password" required [(ngModel)]="password"/>
+        </div>
+            <div>
+                 &nbsp;
+                <button type="submit" class="btn btn-success">Login</button>
+                &nbsp; &nbsp;
+                <button type="reset" class="btn btn-danger">Reset</button>
+             </div>
+            </form>
+        </div>
+    </div>
+    <div class="col-md-5">
+    </div>
+</div>
